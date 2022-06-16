@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ultra&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+ /* Variables de colores y fuentes*/
+
+:root {
+   --radio-green:  #9fff67 ;
+   --sonf-green:#BBFF94;
+   --font: "Righteous", sans-serif;
+   --fontm: "Montserrat",sans-serif;
+} 
+
+body {
+    width: 200;
+    background: black;
+}
+
+h1{
+    font-size: 6rem;
+    color: white;
+}
+
+h2 {
+   font-family: "Montserrat",sans-serif;
+    text-align: center;
+    color: white;
+     font-size: 3rem;
+}
+
+.header {
+    background: var(--radio-green);
+    height: 100px;
+    font-size: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin: 2rem;
+}
+
+.bars__item {
+   display: none;
+}
+
+.nav-logo {
+   font-family: "Righteous", sans-serif;
+    font-size: 3rem;
+    color: black;
+}
+
+.nav-list {
+   font-family:"Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    gap: 80px;
+}
+
+.nav-link{
+    color:black;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color:#ADC9C9;
+}
+
+ .hero {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 70%;
+     gap: 1rem;
+     /* padding: 3rem; */
+     background: black;
+ }
+
+.hero__img {
+     display: block;
+     position: relative;
+     height: 100vh;
+     width: 100vw;
+     /* background: red; */
+ }
+
+
+.hero__text {
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 10;
+    padding: 50px;
+    margin: 150px;
+    width: 100%;
+    /* background: red; */
+    max-width: 500px;
+    color: white;
+ }
+
+ 
+ .hero__text h1,p {
+   font-family: "Montserrat", sans-serif;
+ }
+
+ 
+ .hero__text p {
+   font-size: 2rem;
+
+ }
+
+
+ a {
+     text-decoration: none;
+ }
+
+ .text__btns {
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px;
+ }
+
+ .btn {
+     border: 2px solid var(--radio-green);
+     padding: 1rem 1.5rem;
+     border-radius: 10px;
+     font-weight: 600;
+     font-family: var(--fontm);
+ }
+
+ .btn__cta {
+     background:#87ff42;
+     color: white;
+ }
+
+ .btn__more {
+     color: rgb(184, 195, 206);
+ }
+
+
+ .barra {
+    height: 100px;
+    background: var(--radio-green);
+ }
+
+ .barra-text {
+   font-family: "Righteous",sans-serif;
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+ }
+
+
+.dia-uno {
+     display: flex;
+     justify-content: right;
+     align-items: center;
+     height: 90%;
+     gap: 2rem;
+     background: black;
+     text-align: center;
+}
+
+
+.uno__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20rem;
+}
+
+.catrielypakito {
+    width: 900px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: right;
+}
+
+
+.dia-dos {
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     flex-direction: row-reverse;
+     height: 80%;
+     gap: 1rem;
+     background: black;
+}
+
+ .dos__text {
+     max-width: 350px;
+     margin: 12rem;
+}
+
+ .claracava {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+    width: 90%;
+    height: auto;
+ }
+
+
+ .dia-tres {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 2rem;
+    background: black;
+}
+
+
+.tres__text {
+    max-width: 350px;
+    margin: 15rem;
+}
+
+.dillom{
+    width: 950px;
+ }
+
+/* Sección 2  Mapa*/
+
+ .section-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--sonf-green);
+ }
+
+ .map__text {
+    max-width: 500px;
+    font-size: 30px;
+ }
+
+
+ .img__map {
+    width: 300px;
+ }
+
+ .mapa {
+    width: 400px;
+ }
+
+ 
+ .btn__map {
+    border-color: black;
+    color: #5e5d5d;
+ }
+
+
+ /* Terminada la sección  */
+
+ /* Sección 3  Mail*/
+
+
+
+ .mail {
+    height: 200px;
+    background: var(--radio-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+ }
+
+
+ .mail-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+ }
+
+ 
+ .mail-box input {
+   padding: 4px;
+   margin-right: 5px;
+   height: 40px;
+   width: 200px;
+   border: none;
+   border-radius: 7px;
+ }
+ 
+ 
+ .mail-box button {
+   height: 40px;
+   width: 100px;
+   border: none;
+   border-radius: 7px;
+   font-family: var(--fontm);
+   color: white;
+   background-color: #5e5d5d;
+ }
+
+ .mail h3 {
+   font-family: "Montserrat",sans-serif;
+ } 
+
+
+ .ph__mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0,5rem;
+ }
+
+ h3 {
+    font-size: 2rem;
+    padding: 1rem;
+ }
+
+
+/* Footer */
+
+ .footer {
+    max-width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem ;
+    font-size: 20px;
+ }
+
+
+ .ayuda__items {
+   font-family: var(--fontm);
+    margin: 4rem;
+ }
+
+
+ .social__items {
+   font-family: var(--fontm);
+    margin: 3rem;
+ }
+
+ .footer li {
+   font-family: var(--fontm);
+    padding: 2px;
+    color: white;
+ }
+
+ .festival__item {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 2rem;
+    color: white;
+ }
+
+
+ h4 {
+    color: white;
+ }
+
+ /* /* Media Queries */
+
+ 
+@media (max-width: 576px) {
+
+
+
+
+   .header {
+   width: 800px;
+   }
+
+   .bars__item { 
+      display :flex;
+      /* background: #8E4162; */
+   }
+
+
+   .nav-list {
+      display: none;
+   }
+    
+   
+   .hero {
+      text-align: center;
+      /* background: yellow; */
+      
+   }
+
+
+   .hero-container {  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      /* background: red; */
+   }
+ 
+   .hero__img {
+      height: 300px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+ 
+
+   .hero__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* padding-top: 50px; */
+      gap: 1rem;
+      font-size: 15px;
+      max-width: 600px;
+      /* background-color: red; */
+      padding-bottom: 8rem;
+   }
+
+   
+   .hero__text h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+   }
+
+  
+.text__btns {
+   height: 10px;
+   }
+
+   
+/* Barra Line Up */
+
+
+.barra {
+   width: 100%;
+   height: 5rem;
+   color: var(--radio-green);
+}
+
+.barra-text {
+   font-size: 35px;
+}
+
+  /* Terminado LINE UP BARRA  */
+
+ /* Seccion dias  */
+ 
+ .dia-uno{
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height:300px;
+   background: #ADC9C9;
+ }
+ 
+.catrielypakito {
+   display: block;
+   position: relative;
+   width: 900px;
+   height: 300px;
+ }
+
+ .uno__text {
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   color: white;
+   font-size: 23px;
+ }
+
+ /* Sección Mapa */
+
+ 
+ .map {
+   width: 700px;
+   height: 200px;
+
+   /* background: #8E4162; */
+ }
+
+ 
+ .map__text {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 10rem;
+   background: orange;
+
+   font-size: 1rem;
+   padding: 1rem;
+ }
+
+ .btn__more {
+   padding: 0.5rem;
+   height: 2rem;
+   font-size: 10px;
+   margin-left: 1rem;
+   background: #8E4162;
+ }
+
+ 
+ .mapa {
+   background: #8E4162;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   margin-right:  15rem;
+   width: 200px;
+ }
+}
